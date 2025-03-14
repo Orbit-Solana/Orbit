@@ -1,0 +1,41 @@
+{
+  "name": "orbit-extension",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@choc-ui/chakra-autocomplete": "^5.3.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@solana/addresses": "^2.0.0-preview.3",
+    "@solana/codecs-strings": "^2.0.0-preview.3",
+    "@solana/wallet-standard-chains": "^1.1.0",
+    "@solana/wallet-standard-features": "^1.2.0",
+    "@wallet-standard/core": "^1.0.3",
+    "framer-motion": "^11.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.3.3",
+    "wxt": "^0.17.0"
+  }
+}
